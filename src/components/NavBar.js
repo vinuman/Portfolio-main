@@ -4,7 +4,7 @@ import NavLink from "./NavLink";
 const NavBar = () => {
   return (
     <>
-      <nav className="px-4 py-8">
+      <nav className="p-4">
         {/* LINKS DIV */}
         <div className=" w-[30%] flex justify-around items-center font-semibold">
           <NavLink title="Home" link="" />
