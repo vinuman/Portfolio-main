@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-const NavLink = ({ title, link, active }) => {
+const NavLink = ({ title, link }) => {
   const location = useLocation();
   const isActive = location.pathname === `/${link}`;
   return (

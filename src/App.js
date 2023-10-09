@@ -6,7 +6,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <div className="App font-mont">
+    <div className="App font-mont max-w-[1536px] mx-auto">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />}></Route>

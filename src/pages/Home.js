@@ -6,17 +6,20 @@ const Home = () => {
   const navigate = useNavigate();
   return (
     <>
-      <main className="px-8 border flex">
-        <div className="pt-8 pb-8 relative mb-16 w-[50%]">
-          <img className="w-[100%]  rounded-lg border" src={homeImage}></img>
-          <div className="absolute bottom-2  w-[100%] flex flex-col items-end justify-between ">
+      <main className="px-8 flex max-w-[1536px] mx-auto">
+        <div className="pt-8 pb-8  mb-16 w-[50%]">
+          <img
+            className="w-[100%] h-[50%] rounded-t-lg border"
+            src={homeImage}
+          ></img>
+          <div className="w-[100%] flex flex-col items-end justify-between ">
             <button
               onClick={() => navigate("/projects")}
-              className=" w-[100%] h-[74px] bg-blue-600 text-white font-bold text-[24px] opacity-90 tracking-wider"
+              className=" w-[100%] h-[74px] bg-gradient-to-r from-blue-600 via-white-700 to-blue-400 text-white font-bold text-[24px] opacity-90 tracking-wider hover:text-[28px]"
             >
               Projects
             </button>
-            <button className=" w-[100%] h-[74px] bg-red-500 text-white font-bold text-[24px] opacity-90 tracking-wider">
+            <button className=" w-[100%] h-[74px] bg-gradient-to-r from-red-600 via-white-700 to-red-400 text-white font-bold text-[24px] opacity-90 tracking-wider hover:text-[28px] rounded-b-md">
               Resume
             </button>
           </div>
