@@ -8,7 +8,7 @@ import { LinkedinSvg } from "./Svgs";
 const NavBar = () => {
   return (
     <>
-      <nav className="py-4 px-8 flex justify-between">
+      <nav className="py-4 px-16 flex justify-between">
         {/* LINKS DIV */}
         <div className=" w-[30%] flex justify-around items-center font-semibold">
           <NavLink title="Home" link="" />
@@ -17,10 +17,22 @@ const NavBar = () => {
         </div>
         {/* LINKS DIV ENDS */}
         {/*  EXTERNAL LINKS DIV */}
-        <div className="flex justify-around  w-[20%]">
-          <GitHubSvg className="cursor-pointer hover:scale-125" />
-          <FrontEndSvg className="cursor-pointer hover:scale-125" />
-          <LinkedinSvg className="cursor-pointer hover:scale-125" />
+        <div className="flex justify-around w-[20%]">
+          <a href="https://github.com/vinuman" target="_blank">
+            <GitHubSvg className="cursor-pointer hover:scale-125 transition-all duration-300" />
+          </a>
+          <a
+            href="https://www.frontendmentor.io/profile/vinuman"
+            target="_blank"
+          >
+            <FrontEndSvg className="cursor-pointer hover:scale-125 transition-all duration-300" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vinu-cyril-a3936b154/"
+            target="_blank"
+          >
+            <LinkedinSvg className="cursor-pointer hover:scale-125 transition-all duration-300" />
+          </a>
         </div>
         {/*  EXTERNAL LINKS DIV ENDS */}
       </nav>

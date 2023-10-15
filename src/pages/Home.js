@@ -1,30 +1,33 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import homeImage from "../images/A cartoon of a  1.png";
+import homeImage1 from "../images/pexels-photo-3183165.jpeg";
 
 const Home = () => {
   const navigate = useNavigate();
+
   return (
     <>
-      <main className="px-8 flex max-w-[1536px] mx-auto">
-        <div className="pt-8 pb-8  mb-16 w-[50%]">
+      <main className="p-16 flex justify-between h-[100vh]">
+        <div className="mb-16 w-[50%]">
           <img
-            className="w-[100%] h-[50%] rounded-t-lg border"
-            src={homeImage}
+            className="w-[100%] h-[80%] rounded-lg border"
+            src={homeImage1}
           ></img>
-          <div className="w-[100%] flex flex-col items-end justify-between ">
-            <button
-              onClick={() => navigate("/projects")}
-              className=" w-[100%] h-[74px] bg-gradient-to-r from-blue-600 via-white-700 to-blue-400 text-white font-bold text-[24px] opacity-90 tracking-wider hover:text-[28px]"
-            >
-              Projects
-            </button>
-            <button className=" w-[100%] h-[74px] bg-gradient-to-r from-red-600 via-white-700 to-red-400 text-white font-bold text-[24px] opacity-90 tracking-wider hover:text-[28px] rounded-b-md">
-              Resume
-            </button>
-          </div>
         </div>
-        <div></div>
+        {/* RIGHT DIV */}
+        <div className="w-[50%] px-16 py-8">
+          <h1 className=" text-[3.2rem] font-bold">
+            Crafting User Experiences, One line of code at a time
+          </h1>
+          <p className=" text-[1rem]">
+            <span className=" text-[1.8rem]">&lt;&gt;</span> Hi there! I'm Vinu
+            Cyril, a front-end developer passionate about creating user-centric
+            frontend experience. Discover a portfolio that showcases technical
+            prowess in React.js and other front end technologies{" "}
+            <span className=" text-[1.4rem]">&lt;/&gt;</span>
+          </p>
+        </div>
       </main>
     </>
   );
